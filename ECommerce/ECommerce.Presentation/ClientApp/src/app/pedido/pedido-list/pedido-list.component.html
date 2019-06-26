@@ -1,0 +1,18 @@
+<table>
+  <thead>
+    <tr>
+      <td>Id Pedido</td>
+      <td>Status</td>
+      <td>Valor</td>
+      <td>previsão de entrega</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let pedido of Pedidos">
+      <td>{{ pedido.idPedido }}</td>
+      <td>{{ pedido.idStatus }}</td>
+      <td>{{ pedido.valorPedido }}</td>
+      <td>{{ pedido.dataPrevisaoEntrega | date:'dd/MM/yyyy' }}</td>
+    </tr>
+  </tbody>
+</table>

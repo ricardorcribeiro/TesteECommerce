@@ -1,0 +1,86 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.352
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0-Presentation", "0-Presentation", "{B94E09AD-2D87-400F-9D77-145E769D4911}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-Services", "1-Services", "{0611C442-BEDA-4847-B373-CD8F84F48D2C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2-Application", "2-Application", "{B72505E7-EBC0-46F0-B526-E26245C87086}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3-Domain", "3-Domain", "{A506650D-18E4-4C74-8B52-0F741DEA2109}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4-Infra", "4-Infra", "{64FFF91E-6008-44E6-8D2F-AF2CA1CB6371}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.1-Data", "4.1-Data", "{73F38772-2A75-4516-854A-8DFCA11F51E7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.2-CrossCutting", "4.2-CrossCutting", "{A8B24572-4F28-4DD4-9389-F793E6CF87F9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ECommerce.Services", "ECommerce.Services\ECommerce.Services.csproj", "{A0E20D71-AEE1-4BD6-ADE9-83FC117E86AD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ECommerce.Application", "ECommerce.Application\ECommerce.Application.csproj", "{D62C3B5C-1A49-44CF-90F0-502AB79B96BE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ECommerce.Domain", "ECommerce.Domain\ECommerce.Domain.csproj", "{FD619205-8ABD-4938-8BFA-2F392A16DAC9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ECommerce.Infra.Data", "ECommerce.Infra.Data\ECommerce.Infra.Data.csproj", "{4D5F2269-9BAB-427F-B1CA-D28A9AA0451B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ECommerce.Infra.CrossCutting.Autofac", "ECommerce.Infra.CrossCutting.Autofac\ECommerce.Infra.CrossCutting.Autofac.csproj", "{9A6C9983-C873-4DFD-A142-4BE43D3F0F50}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ECommerce.Infra.CrossCutting.DataTransferObject", "ECommerce.Infra.CrossCutting.DataTransferObject\ECommerce.Infra.CrossCutting.DataTransferObject.csproj", "{843445DA-95B5-451D-A5BF-09C1CE7CECAB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerce.Presentation", "ECommerce.Presentation\ECommerce.Presentation.csproj", "{73EC7C10-A086-4968-9630-6D7B73701738}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A0E20D71-AEE1-4BD6-ADE9-83FC117E86AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0E20D71-AEE1-4BD6-ADE9-83FC117E86AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0E20D71-AEE1-4BD6-ADE9-83FC117E86AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0E20D71-AEE1-4BD6-ADE9-83FC117E86AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D62C3B5C-1A49-44CF-90F0-502AB79B96BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D62C3B5C-1A49-44CF-90F0-502AB79B96BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D62C3B5C-1A49-44CF-90F0-502AB79B96BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D62C3B5C-1A49-44CF-90F0-502AB79B96BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD619205-8ABD-4938-8BFA-2F392A16DAC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD619205-8ABD-4938-8BFA-2F392A16DAC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD619205-8ABD-4938-8BFA-2F392A16DAC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD619205-8ABD-4938-8BFA-2F392A16DAC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D5F2269-9BAB-427F-B1CA-D28A9AA0451B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D5F2269-9BAB-427F-B1CA-D28A9AA0451B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D5F2269-9BAB-427F-B1CA-D28A9AA0451B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D5F2269-9BAB-427F-B1CA-D28A9AA0451B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A6C9983-C873-4DFD-A142-4BE43D3F0F50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A6C9983-C873-4DFD-A142-4BE43D3F0F50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A6C9983-C873-4DFD-A142-4BE43D3F0F50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A6C9983-C873-4DFD-A142-4BE43D3F0F50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{843445DA-95B5-451D-A5BF-09C1CE7CECAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{843445DA-95B5-451D-A5BF-09C1CE7CECAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{843445DA-95B5-451D-A5BF-09C1CE7CECAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{843445DA-95B5-451D-A5BF-09C1CE7CECAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73EC7C10-A086-4968-9630-6D7B73701738}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73EC7C10-A086-4968-9630-6D7B73701738}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73EC7C10-A086-4968-9630-6D7B73701738}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73EC7C10-A086-4968-9630-6D7B73701738}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{73F38772-2A75-4516-854A-8DFCA11F51E7} = {64FFF91E-6008-44E6-8D2F-AF2CA1CB6371}
+		{A8B24572-4F28-4DD4-9389-F793E6CF87F9} = {64FFF91E-6008-44E6-8D2F-AF2CA1CB6371}
+		{A0E20D71-AEE1-4BD6-ADE9-83FC117E86AD} = {0611C442-BEDA-4847-B373-CD8F84F48D2C}
+		{D62C3B5C-1A49-44CF-90F0-502AB79B96BE} = {B72505E7-EBC0-46F0-B526-E26245C87086}
+		{FD619205-8ABD-4938-8BFA-2F392A16DAC9} = {A506650D-18E4-4C74-8B52-0F741DEA2109}
+		{4D5F2269-9BAB-427F-B1CA-D28A9AA0451B} = {73F38772-2A75-4516-854A-8DFCA11F51E7}
+		{9A6C9983-C873-4DFD-A142-4BE43D3F0F50} = {A8B24572-4F28-4DD4-9389-F793E6CF87F9}
+		{843445DA-95B5-451D-A5BF-09C1CE7CECAB} = {A8B24572-4F28-4DD4-9389-F793E6CF87F9}
+		{73EC7C10-A086-4968-9630-6D7B73701738} = {B94E09AD-2D87-400F-9D77-145E769D4911}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6991D0CA-AFBC-43E9-B8A8-2184007A6D2E}
+	EndGlobalSection
+EndGlobal

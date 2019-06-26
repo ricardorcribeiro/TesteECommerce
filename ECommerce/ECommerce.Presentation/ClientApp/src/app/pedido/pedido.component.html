@@ -1,0 +1,21 @@
+<h1>Pedido</h1>
+<table>
+  <thead>
+    <tr>
+      <td>Id Pedido</td>
+      <td>Status</td>
+      <td>Valor</td>
+      <td>Previsão de entrega</td>
+      <td>Consultar Historico</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let pedido of Pedidos">
+      <td>{{ pedido.idPedido }}</td>
+      <td>{{ pedido.idStatus }}</td>
+      <td>{{ pedido.valorPedido }}</td>
+      <td>{{ pedido.dataPrevisaoEntrega | date:'dd/MM/yyyy' }}</td>
+      <td><a class="nav-link text-dark" [routerLink]='["/historico-pedido", pedido.idPedido]'>Consultar</a></td>
+    </tr>
+  </tbody>
+</table>

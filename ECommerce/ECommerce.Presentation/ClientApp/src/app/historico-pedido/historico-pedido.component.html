@@ -1,0 +1,26 @@
+<h1>Histórico Pedido</h1>
+<table>
+    <thead>
+      <tr>
+        <td>Id Pedido</td>
+        <td>Data Pedido</td>
+        <td>Data Prevista</td>
+        <td>Status</td>
+        <td>Prazo</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let Historico of Historicos">
+        <td>{{Historico.idPedido}}</td>
+        <td>{{Historico.dataStatus | date:'dd/MM/yyyy hh:mm:ss a'}}</td>
+        <td>{{Historico.pedido.dataPrevisaoEntrega | date:'dd/MM/yyyy hh:mm:ss a'}}</td>
+        <td>{{Historico.idStatus}}</td>
+        <td *ngIf="Historico.statusDoAtraso == 0" style="background-color:green">
+          No Prazo
+        </td>
+        <td *ngIf="Historico.statusDoAtraso == 1" style="background-color:red">
+          Atrasado
+        </td>
+      </tr>
+    </tbody>
+  </table>
